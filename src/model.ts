@@ -20,3 +20,13 @@ export interface RoleType {
   skills: string[];
   summary: string;
 }
+
+//* Definition of a topic object
+export enum TopicType {
+  All = "all",
+  SoftwareEngineering = "software_engineering",
+  WebDevelopment = "web_development",
+  DataEngineering = "data_engineering",
+  MachineLearning = "machine_learning",
+  DataScience = "data_science",
+}

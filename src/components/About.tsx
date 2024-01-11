@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="w-full py-6 pb-40 pt-36 sm:pl-4 sm:pr-4 md:py-12 md:pb-64 md:pl-64 md:pr-64 md:pt-72">
+    <section
+      className="w-full py-6 pb-40 pt-36 sm:pl-4 sm:pr-4 md:py-12 md:pb-64 md:pl-64 md:pr-64 md:pt-72"
+      id="about"
+    >
       <div className="container px-4 sm:px-6 md:pl-1">
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
