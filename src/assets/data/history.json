@@ -1,0 +1,60 @@
+{
+  "History": [
+    {
+      "id": 3,
+      "title": "Tech Fellow",
+      "employer": "Metropolitan Transportation Authority",
+      "start": "June 2023",
+      "end": "Present",
+      "skills": [
+        "Python",
+        "SQL",
+        "Docker",
+        "Apache Airflow",
+        "dbt",
+        "Postgres",
+        "Flask",
+        "React",
+        "Github Actions",
+        "Oracle",
+        "Terraform",
+        "Apache Kafka",
+        "Debezium"
+      ],
+      "summary": "Connecting people with data by creating data pipelines, web applications, and APIs that lead to data-driven decisions and business value"
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer",
+      "employer": "Develop for Good",
+      "start": "April 2023",
+      "end": "August 2023",
+      "skills": [
+        "Python",
+        "SQL",
+        "Postgres",
+        "Apache Airflow",
+        "Github Actions"
+      ],
+      "summary": "Spearheaded the design and implementation of an ELT pipeline alongside a team of 8 engineers, utilizing Python, SQL, and Apache Airflow, facilitating the movement of data to a centralized data warehouse and enabling holistic data views"
+    },
+    {
+      "id": 1,
+      "title": "Energy Technology Intern",
+      "employer": "The City University of New York",
+      "start": "Jul 2022",
+      "end": "Aug 2022",
+      "skills": ["Python", "Excel", "Jupyter"],
+      "summary": "Preformed quality assurance on applications and created automation tools with Python and its many libraries to connect the right people with data to support data-driven decisions"
+    },
+    {
+      "id": 0,
+      "title": "Operations & Data Intern",
+      "employer": "The Urban Assembly",
+      "start": "Mar 2022",
+      "end": "May 2022",
+      "skills": ["Excel", "Data Studio"],
+      "summary": "Created interactive data dashboards to connect 3 different non technical teams with data to support them in making data-driven decisions"
+    }
+  ]
+}

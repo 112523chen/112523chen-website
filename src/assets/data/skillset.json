@@ -1,0 +1,89 @@
+{
+  "SkillSet": [
+    {
+      "id": "programming",
+      "text": "Programming Languages:",
+      "values": [
+        "Python",
+        "SQL",
+        "JavaScript",
+        "TypeScript",
+        "Rust",
+        "Golang",
+        "Java",
+        "PHP",
+        "Bash",
+        "HTML",
+        "CSS",
+        "Sass"
+      ]
+    },
+    {
+      "id": "library",
+      "text": "Libraries:",
+      "values": [
+        "Pandas",
+        "Scikit-learn",
+        "Matplotlib",
+        "TenserFlow",
+        "Styled-Components",
+        "React Router",
+        "PyMongo",
+        "PySpark",
+        "Sqlite3",
+        "Rechart",
+        "NLTK",
+        "Supertest",
+        "Redux",
+        "SciPy",
+        "Seaborn",
+        "NumPy"
+      ]
+    },
+    {
+      "id": "framework",
+      "text": "Frameworks:",
+      "values": [
+        "React",
+        "Node",
+        "Express",
+        "Next.js",
+        "FastAPI",
+        "Flask",
+        "Django",
+        "Tailwind CSS",
+        "Jest",
+        "Mocha",
+        "Bootstrap",
+        "Rocket.rs",
+        "Streamlit"
+      ]
+    },
+    {
+      "id": "tool",
+      "text": "Tools:",
+      "values": [
+        "GitHub",
+        "Git",
+
+        "Postgres",
+        "dbt",
+        "Docker",
+        "Apache Airflow",
+        "Amazon Web Services",
+        "Redis",
+        "MongoDB",
+        "Figma",
+        "Neo4j",
+        "Excel",
+        "Shuttle.rs",
+        "Debezium",
+        "MySQL",
+        "Data Studio",
+        "Tableau",
+        "Apache Spark",
+        "Jupyter Notebooks"
+      ]
+    }
+  ]
+}

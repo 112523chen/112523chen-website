@@ -1,0 +1,24 @@
+{
+  "CS_Coursework": [
+    "Data Structures",
+    "Web Programming",
+    "Object Oriented Programming in Java",
+    "Programming Fundamentals"
+  ],
+  "DS_Coursework": [
+    "Introduction to Artificial Intelligence",
+    "Information Retrieval",
+    "Natural Language Processing",
+    "Machine Learning Fundamentals",
+    "Machine Learning for Physics and Astronomy",
+    "Data Mining",
+    "Introduction to Non-Relational (NoSQL) Technologies",
+    "Data Visualizations",
+    "Data Security, Privacy and Ethics",
+    "Information and Data Management",
+    "Introduction to Data Science",
+    "Database Systems Fundamentals",
+    "Introduction to Linear Algebra",
+    "Probability and Mathematical Statistics"
+  ]
+}

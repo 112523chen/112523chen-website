@@ -1,0 +1,39 @@
+{
+  "navData": [
+    {
+      "id": 1,
+      "section": "home-section",
+      "text": "Home"
+    },
+    {
+      "id": 2,
+      "section": "about-section",
+      "text": "About Me"
+    },
+    {
+      "id": 3,
+      "section": "skills",
+      "text": "Skills"
+    },
+    {
+      "id": 4,
+      "section": "experiences",
+      "text": "Experiences"
+    },
+    {
+      "id": 5,
+      "section": "projects",
+      "text": "Projects"
+    },
+    {
+      "id": 6,
+      "section": "road-map",
+      "text": "Road Map"
+    },
+    {
+      "id": 7,
+      "section": "contact-section",
+      "text": "Contact Me"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "projectData": [
+    {
+      "id": 14,
+      "title": "Wikipedia Information Retrieval System",
+      "details": "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
+      "skills": [
+        "Python",
+        "NLTK",
+        "Docker",
+        "Streamlit",
+        "Flask",
+        "Ollama",
+        "llama2"
+      ],
+      "topics": ["data_science"],
+      "isRepo": false,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/wikipedia-search-engine-web-app"
+    },
+    {
+      "id": 13,
+      "title": "Job Tracker App",
+      "details": "Develop a full-stack web app using TypeScript React, Express, Node, and Postgres database that allows users to create, view, update, and delete items in their job tracker",
+      "skills": [
+        "Postgres",
+        "Express",
+        "React",
+        "Node",
+        "TypeScript",
+        "Styled-Components",
+        "SQL",
+        "Github Actions"
+      ],
+      "topics": ["software_engineering", "web_development"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/Job-Application-Tracker-Web-App"
+    },
+    {
+      "id": 12,
+      "title": "Portfolio Website",
+      "details": "Created a website to highlight projects and person brand with React, TypeScript, and Styled-Components",
+      "skills": [
+        "React",
+        "TypeScript",
+        "Jest",
+        "Styled-Components",
+        "Github Actions"
+      ],
+      "topics": ["software_engineering", "web_development"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": "https://112523chen.github.io/PortfolioWebsite3.1/"
+    },
+    {
+      "id": 11,
+      "title": "Finding Features About New Galaxies with ML",
+      "details": "Trained and tested 4 supervised machine learning models to predict 4 features of galaxy from a spectra of the same galaxy: the total amount of mass in stars with a galaxy, the amount of cosmic dust in a galaxy, how long ago did the galaxy form its first stars, and the speed of the process of star formation",
+      "skills": ["Python", "Numpy", "Matplotlib", "Seaborn", "Scikit-Learn"],
+      "topics": ["machine_learning", "data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/ML-Galaxy-Project"
+    },
+    {
+      "id": 10,
+      "title": "NYC Airbnb Listing Price Predictor App",
+      "details": "Constructed a web application that predicts the listing price for an Airbnb listing in New York City",
+      "skills": ["Python", "Numpy", "Matplotlib", "Scikit-Learn", "Streamlit"],
+      "topics": ["machine_learning", "data_science"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": "https://112523chen-cet4973-fall2022-project-main-o7ewsh.streamlit.app/"
+    },
+    {
+      "id": 9,
+      "title": "NYC Airbnb Listings Analysis",
+      "details": "Analyzed data about the vacancy rates of Airbnb listings in NYC over a period of time from December 21' to September 22' using python and its many libraries",
+      "skills": ["Python", "Numpy", "Matplotlib", "Seaborn"],
+      "topics": ["machine_learning", "data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/NYC_Airbnb_Analysis"
+    },
+    {
+      "id": 8,
+      "title": "Emotion Detection Web App",
+      "details": "Constructed a web application that predicts emotions within a piece of text using supervised machine learning model and natural language processing with an accuracy of 88%",
+      "skills": [
+        "Python",
+        "Numpy",
+        "Matplotlib",
+        "Scikit-Learn",
+        "NTLK",
+        "Streamlit"
+      ],
+      "topics": ["machine_learning", "data_science"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": "https://112523chen-text-emotion-classification-ctp-dem0.streamlit.app/"
+    },
+    {
+      "id": 7,
+      "title": "Image Classification App",
+      "details": "Developed a web application that classifies images of natural scenes around the world using Random Forest Classifier with a with an accuracy of 53%",
+      "skills": ["Python", "Pandas", "Scikit-Learn", "Streamlit"],
+      "topics": ["machine_learning", "data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/Image-Classification-App"
+    },
+    {
+      "id": 6,
+      "title": "Reddit Client App",
+      "details": "Created an interactive Reddit client application using HTML, CSS, JavaScript, and React.js to deepen understanding of React and the virtual DOM",
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "isRepo": false,
+      "isWebApp": true,
+      "topics": ["web_development"],
+      "link": "https://112523chen.github.io/RedditClientWebApp/"
+    },
+    {
+      "id": 5,
+      "title": "Biodiversity in National Parks Analysis",
+      "details": "Analyzed 2 datasets about species present across 4 national parks and find out more about the endangered species within the parks",
+      "skills": ["Python", "Pandas", "Numpy", "Scipy", "Seaborn", "Matplotlib"],
+      "topics": ["data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/Biodiversity-in-National-Parks-Analysis"
+    },
+    {
+      "id": 4,
+      "title": "Manhattan School Districts Standardized Testing Analysis",
+      "details": "Analyzed 2 datasets from NYC Open Data about the scoring of the math and english standardized test and create tools to summarize the data",
+      "skills": [
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Sodapy",
+        "Seaborn",
+        "Matplotlib"
+      ],
+      "topics": ["data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+
+      "link": "https://github.com/112523chen/School-Districts-Standardized-Test-Analysis"
+    },
+    {
+      "id": 3,
+      "title": "Gym Website",
+      "details": "Created an interactive website for a gym brand to illustrate and deepen HTML, CSS, and JavaScript skills, along with the concept of box models within CSS",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "topics": ["web_development"],
+      "isRepo": false,
+      "isWebApp": false,
+      "link": "https://112523chen.github.io/GymWebsite/"
+    },
+    {
+      "id": 2,
+      "title": "Restaurant Website",
+      "details": "Created a website for a fine dining restaurant to illustrate and deepen HTML and CSS knowledge, along with the concept of box models within CSS",
+      "skills": ["HTML", "CSS"],
+      "topics": ["web_development"],
+      "isRepo": false,
+      "isWebApp": false,
+      "link": "https://112523chen.github.io/RestaurantWebsite/"
+    },
+    {
+      "id": 1,
+      "title": "Life Expectancy and GDP Analysis",
+      "details": "Analyzed a dataset containing life expectancy and GDP of 6 countries across the world with different circumstances",
+      "skills": ["Python", "Pandas", "Numpy", "Seaborn", "Matplotlib"],
+      "topics": ["data_science"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/Life-Expectancy-and-GDP-Analysis"
+    }
+  ]
+}
