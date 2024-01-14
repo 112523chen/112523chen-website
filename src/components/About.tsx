@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -15,13 +16,43 @@ const About = () => {
           </div>
 
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            I am a third-year data science student at New York City College of
-            Technology, CUNY and CUNY Tech Prep Alumni with real-world
-            experience in data analysis, quality assurance, and data
-            engineering. Within these experiences, I have worked to connect
-            people with data in investigator and engineer roles. I am passionate
-            about learning more about this world through different lenses
-            especially through data.
+            I&apos;m a final year college student and{" "}
+            <Link
+              href="https://cunytechprep.org/"
+              target="_blank"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+            >
+              CUNY Tech Prep Alumni
+            </Link>{" "}
+            who is pursuing a{" "}
+            <span className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500">
+              Data Science
+            </span>{" "}
+            degree at New York City College of Technology, CUNY. I&apos;m a
+            curious and passionate individual who is always looking for new
+            opportunities. Some of the paste experiences I have are in{" "}
+            <span
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+              title="Data Analysis"
+            >
+              data analysis
+            </span>
+            ,{" "}
+            <span
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+              title="Data Analysis"
+            >
+              quality assurance
+            </span>
+            , and{" "}
+            <span
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+              title="Data Engineering"
+            >
+              data engineering
+            </span>
+            . Within these experiences, I have worked to connect people with
+            data in investigator and engineer roles.
           </p>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             My goal is to discover, analyze and harness &mdash; the power of
@@ -29,8 +60,8 @@ const About = () => {
             live in.
           </p>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            When I am not in front of a screen, I’m most likely enjoying the
-            local food and wonderful weather while reading or listening to
+            When I am not in front of a screen, I&apos; m most likely enjoying
+            the local food and wonderful weather while reading or listening to
             music.
           </p>
         </div>
