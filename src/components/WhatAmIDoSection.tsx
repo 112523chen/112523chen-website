@@ -13,16 +13,15 @@ const WhatAmIDoSection = () => {
               What I&apos;m Doing Now
             </h2>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Last updated: January 11, 2024
+              Last updated: January 15, 2024
             </p>
           </div>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Currently, I am working on a new{" "}
+            Currently, I am working on a new project using the{" "}
             <span className="font-bold text-blue-600 dark:text-blue-300">
-              project
+              T3 Stack
             </span>{" "}
-            that involves the use of cutting-edge technologies. I am also
-            learning more about{" "}
+            that will be released soon. I am also learning more about{" "}
             <span className="font-bold text-blue-600 dark:text-blue-300">
               cloud computing
             </span>{" "}

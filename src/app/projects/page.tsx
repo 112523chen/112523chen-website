@@ -4,7 +4,7 @@ import Link from "next/link";
 import { handleVisibilityChange } from "~/utils";
 import { projectData } from "~/assets/data/projectData.json";
 import { type ProjectType, TopicType } from "~/model";
-import { ToggleGroup, ToggleGroupItem } from "src/components/ui/toggle-group";
+import Navbar from "~/components/Navbar";
 
 import {
   CommandDialog,
@@ -63,11 +63,26 @@ const CommandLine = () => {
         <CommandGroup heading="Suggestions">
           <CommandItem
             onSelect={() => {
-              window.location.href = "/#home";
+              window.location.href = "/";
               setOpen(false);
             }}
           >
             Go to Start of Page
+          </CommandItem>
+          <CommandItem
+            onSelect={() => {
+              const number = Math.floor(Math.random() * projectData.length);
+
+              const randomProject = projectData[number];
+
+              if (randomProject) {
+                window.location.href = `/projects/${randomProject.id}`;
+              }
+
+              setOpen(false);
+            }}
+          >
+            See random project
           </CommandItem>
         </CommandGroup>
       </CommandList>
@@ -76,7 +91,9 @@ const CommandLine = () => {
 };
 
 const ProjectsPage = () => {
-  const [topic, setTopic] = React.useState<TopicType>(TopicType.All);
+  const [currentTopic, setCurrentTopic] = React.useState<TopicType>(
+    TopicType.All,
+  );
   const [projects, setProjects] = React.useState<ProjectType[]>(projectData);
 
   useEffect(() => {
@@ -88,52 +105,54 @@ const ProjectsPage = () => {
   }, []);
 
   useEffect(() => {
-    if (topic === TopicType.All) {
+    if (currentTopic === TopicType.All) {
       setProjects(projectData);
     } else {
       setProjects(
-        projectData.filter((project) => project.topics.includes(topic)),
+        projectData.filter((project) => project.topics.includes(currentTopic)),
       );
     }
-  }, [topic]);
+  }, [currentTopic]);
 
   return (
     <main className="min-h-screen bg-gray-100 dark:bg-gray-800">
       <CommandLine />
-      <h1 className="py-16 text-center text-4xl font-semibold text-gray-900 dark:text-gray-50">
+      <Navbar />
+      <h1 className="pb-8 text-center text-4xl font-semibold text-gray-900 dark:text-gray-50">
         Projects
       </h1>
-      <ToggleGroup
-        type="single"
-        value={topic}
-        onValueChange={(value) => setTopic(value as TopicType)}
-        className="flex w-screen justify-center"
-      >
+      <div className="mb-8 flex w-screen flex-wrap justify-center">
         {Object.values(TopicType).map((topic: TopicType) => (
-          <ToggleGroupItem
+          <button
             key={topic}
-            value={topic}
-            aria-label={`Toggle ${topic}`}
+            type="button"
+            onClick={() => setCurrentTopic(topic)}
+            className={`m-2 rounded-md px-4 py-2 text-sm font-medium ${
+              topic === currentTopic
+                ? "bg-blue-400 text-white dark:bg-blue-500 dark:text-gray-50"
+                : "bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-gray-50"
+            }`}
           >
-            <div className="h-16 w-fit text-2xl font-semibold text-gray-900 hover:text-gray-700 active:text-gray-500 dark:text-gray-50 dark:hover:text-gray-300 dark:active:text-gray-400">
-              {convertTopicToText(topic)}
-            </div>
-          </ToggleGroupItem>
+            {convertTopicToText(topic)}
+          </button>
         ))}
-      </ToggleGroup>
+      </div>
       <div className="flex flex-wrap justify-center">
         {projects.length === 0 ? (
           <div className="flex h-[50vh] w-screen items-center justify-center">
             <p className="text-center text-2xl font-semibold text-gray-900 dark:text-gray-50">
               No projects found for{" "}
-              <span className="text-red-500">{convertTopicToText(topic)}</span>
+              <span className="text-red-500">
+                {convertTopicToText(currentTopic)}
+              </span>
             </p>
           </div>
         ) : (
           projects.map((project: ProjectType) => (
             <Link
               key={project.id}
-              href={`/projects/${project.id}`}
+              // href={`/projects/${project.id}`} TODO: Uncomment this line when I have the project pages ready
+              href={"/projects/"}
               className="m-8 w-96 cursor-pointer rounded-lg border border-gray-200 p-4 hover:shadow-2xl dark:border-gray-700"
             >
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-50">
@@ -148,11 +167,22 @@ const ProjectsPage = () => {
           ))
         )}
       </div>
-      <div className="flex justify-center">
-        <Link href={"/"} className="m-8 w-96 cursor-pointer text-center">
-          Back to Home
+      <div className="flex justify-center pb-8 md:hidden">
+        <Link href="/">
+          <button
+            type="button"
+            className="m-2 rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 dark:bg-gray-700 dark:text-gray-50"
+          >
+            Go Back to Main Page
+          </button>
         </Link>
       </div>
+
+      {/* <div className="flex h-32 w-screen items-center justify-center">
+        <p className="text-center text-2xl font-semibold text-gray-900 dark:text-gray-50">
+          Made with ❤️ by Alex Chen
+        </p>
+      </div> */}
     </main>
   );
 };

@@ -1,6 +1,8 @@
 export const handleVisibilityChange = () => {
-  document.title =
-    document.visibilityState === "hidden"
-      ? "Your next software engineer"
-      : "Alex Chen";
+  setTimeout(() => {
+    document.title =
+      document.visibilityState === "hidden"
+        ? "Your next software engineer"
+        : "Alex Chen";
+  }, 2000);
 };

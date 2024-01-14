@@ -30,3 +30,16 @@ export enum TopicType {
   MachineLearning = "machine_learning",
   DataScience = "data_science",
 }
+//* Definition of a skill object
+export interface SkillTypes {
+  id: number;
+  text: string;
+  values: SkillType[];
+}
+
+//* Definition of a skill object
+export interface SkillType {
+  id: number;
+  name: string;
+  tooltopSummary: string;
+}

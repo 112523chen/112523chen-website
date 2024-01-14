@@ -71,7 +71,7 @@ const CommandLine = () => {
               setOpen(false);
             }}
           >
-            Go to Skillset Section
+            Go to see Alex&apos;s Skills
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -79,7 +79,7 @@ const CommandLine = () => {
               setOpen(false);
             }}
           >
-            Go to Professional Experience Section
+            Go to see Where Alex has Worked
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -87,7 +87,7 @@ const CommandLine = () => {
               setOpen(false);
             }}
           >
-            Go to Projects Section
+            Go see Alex&apos;s Latest Projects
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -95,7 +95,7 @@ const CommandLine = () => {
               setOpen(false);
             }}
           >
-            Go to What Am I Doing Now Section
+            Go see What is Alex Doing Now
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -103,7 +103,7 @@ const CommandLine = () => {
               setOpen(false);
             }}
           >
-            View my Projects
+            View Alex&apos;s Projects
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
@@ -111,6 +111,7 @@ const CommandLine = () => {
           <CommandItem
             onSelect={() => {
               window.open("https://www.linkedin.com/in/itsalexchen", "_blank");
+
               setOpen(false);
             }}
           >
@@ -134,7 +135,7 @@ const CommandLine = () => {
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
-        <CommandGroup heading="Commands">
+        {/* <CommandGroup heading="Commands">
           <CommandItem
             onSelect={() => {
               // update the user's preferred color scheme
@@ -164,7 +165,7 @@ const CommandLine = () => {
           >
             Set Page to Light mode
           </CommandItem>
-        </CommandGroup>
+        </CommandGroup> */}
       </CommandList>
     </CommandDialog>
   );

@@ -2,19 +2,23 @@
   "linkData": [
     {
       "id": "Email",
-      "link": "mailto:itsalexchen@gmail.com"
+      "link": "mailto:itsalexchen@gmail.com",
+      "description": "Email me"
     },
     {
       "id": "GitHub",
-      "link": "https://github.com/112523chen"
+      "link": "https://github.com/112523chen",
+      "description": "View my GitHub"
     },
     {
       "id": "LinkedIn",
-      "link": "https://www.linkedin.com/in/alex-chen-2407251b4/"
+      "link": "https://www.linkedin.com/in/alex-chen-2407251b4/",
+      "description": "View my LinkedIn"
     },
     {
       "id": "Resume",
-      "link": "/AlexChenResume.pdf"
+      "link": "/AlexChenResume.pdf",
+      "description": "View my resume"
     }
   ]
 }
