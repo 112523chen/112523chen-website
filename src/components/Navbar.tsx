@@ -4,17 +4,17 @@ import { ChevronLeft } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="hidden flex-wrap items-center justify-between bg-gray-800 p-6 md:flex">
-      <li className="mr-6 flex flex-shrink-0 items-center text-white">
+    <nav className="hidden flex-wrap items-center justify-between p-6 md:flex dark:bg-gray-800">
+      <li className="mr-6 flex flex-shrink-0 items-center text-xl font-semibold tracking-tight text-black dark:text-white">
         <Link href="/" className="flex items-center">
           <ChevronLeft />
-          <span className="text-xl font-semibold tracking-tight">
+          <span className="text-xl font-semibold tracking-tight text-black dark:text-white">
             Go Back Home
           </span>
         </Link>
       </li>
       <li className="flex flex-shrink-0 items-center">
-        <p className="text-xl font-semibold tracking-tight text-white">
+        <p className="text-xl font-semibold tracking-tight text-black dark:text-white">
           Press <kbd>⌘</kbd> + <kbd>K</kbd> to see what you can do
         </p>
       </li>
