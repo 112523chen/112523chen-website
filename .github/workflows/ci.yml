@@ -1,0 +1,41 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Run Security Audit
+        run: |
+          npm audit
+          if [ $? -eq 0 ]
+          then
+            echo "No security issues found"
+          else
+            echo "Security issues found, fixing them automatically"
+            npm audit fix
+          fi
+
+      - name: Build
+        run: npm run build
