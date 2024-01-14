@@ -20,12 +20,13 @@ const Display = () => {
             </div>
           </div>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            I am a <span className="text-blue-500">data science</span> student
-            studying at{" "}
-            <span className="text-blue-500">
-              New York City College of Technology
+            I am a final year{" "}
+            <span className="text-blue-500 dark:text-blue-300">
+              data science
             </span>{" "}
-            while also studying{" "}
+            student studying at{" "}
+            <span className="text-blue-500 dark:text-blue-300">CUNY</span> while
+            also learning more about{" "}
             <span className="text-blue-500">full stack development</span> in my
             free time with a mission of connecting people with data.
           </p>
