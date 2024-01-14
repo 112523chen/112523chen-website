@@ -121,7 +121,7 @@ const ProjectsPage = () => {
       <h1 className="pb-8 text-center text-4xl font-semibold text-gray-900 dark:text-gray-50">
         Projects
       </h1>
-      <div className="mb-8 flex w-screen flex-wrap justify-center">
+      <div className="mx-4 mb-8 flex flex-wrap justify-center">
         {Object.values(TopicType).map((topic: TopicType) => (
           <button
             key={topic}
