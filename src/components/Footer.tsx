@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                       <Link
                         target="_blank"
                         href={link.link}
-                        className="text-md inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-gray-200 px-4 py-2 font-medium text-gray-700 no-underline ring-offset-white transition-colors hover:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 md:mb-0 dark:bg-gray-700 dark:text-gray-200 dark:ring-offset-slate-950 dark:hover:bg-gray-600 dark:focus-visible:ring-slate-300"
+                        className="text-md my-1 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-gray-200 px-4 py-2 font-medium text-gray-700 no-underline ring-offset-white transition-colors hover:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 md:my-0 md:mb-0 dark:bg-gray-700 dark:text-gray-200 dark:ring-offset-slate-950 dark:hover:bg-gray-600 dark:focus-visible:ring-slate-300"
                       >
                         {link.id}
                       </Link>
