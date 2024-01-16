@@ -4,6 +4,14 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+import { PHProvider } from "~/providers";
+
+import dynamic from "next/dynamic";
+
+const PostHogPageView = dynamic(() => import("~/components/PostHogPageView"), {
+  ssr: false,
+});
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -22,11 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} overscroll-none`}>
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
+      <PHProvider>
+        <body className={`font-sans ${inter.variable} overscroll-none`}>
+          <PostHogPageView />
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </body>
+      </PHProvider>
     </html>
   );
 }
