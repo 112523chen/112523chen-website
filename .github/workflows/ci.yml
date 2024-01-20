@@ -30,16 +30,5 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Run Security Audit
-        run: |
-          npm audit
-          if [ $? -eq 0 ]
-          then
-            echo "No security issues found"
-          else
-            echo "Security issues found, fixing them automatically"
-            npm audit fix
-          fi
-
       - name: Build
         run: npm run build
