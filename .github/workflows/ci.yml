@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
+  NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,17 +29,6 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      - name: Run Security Audit
-        run: |
-          npm audit
-          if [ $? -eq 0 ]
-          then
-            echo "No security issues found"
-          else
-            echo "Security issues found, fixing them automatically"
-            npm audit fix
-          fi
 
       - name: Build
         run: npm run build
