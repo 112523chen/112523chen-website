@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
+  NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
